@@ -1,10 +1,11 @@
 .sidebar {
-  width: 280px;
+  width: 240px;
   height: calc(100% - 60px);
   position: fixed;
   top: 85px;
   left: 10;
-  background-color: #dedede;
+  /* background-color: #dedede; */
+  background-color: #f2f2f2;
   /* padding-top: 20px; */
   z-index: 900;
   border-radius: 20px;
