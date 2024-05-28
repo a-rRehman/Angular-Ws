@@ -1,6 +1,14 @@
 <app-header></app-header>
-<app-sidebar></app-sidebar>
-<div class="main-content">
-  <app-delivery-order></app-delivery-order>
-  <app-tree-table-selection-checkbox-demo></app-tree-table-selection-checkbox-demo>
+
+<div class="p-grid">
+  <div class="p-col-12 p-md-3 p-lg-2">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="p-col">
+    <main role="main">
+      <div class="main-content">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+  </div>
 </div>

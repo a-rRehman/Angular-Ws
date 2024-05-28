@@ -24,6 +24,18 @@ import { ChartModule } from 'primeng/chart';
 import Quill from 'quill';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: 'DeliveryForm',
+    component: DeliveryOrderComponent,
+  },
+  {
+    path: 'TreeTable',
+    component: TreeTableSelectionCheckboxDemo,
+  },
+];
 
 @NgModule({
   declarations: [
@@ -51,6 +63,7 @@ import { HeaderComponent } from './header/header.component';
     FormsModule,
     InputTextModule,
     CommonModule,
+    RouterModule.forRoot(routes),
   ],
 
   providers: [],
